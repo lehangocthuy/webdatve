@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="lib/slick/slick-theme.css">
+    <link rel="stylesheet" href="lib/slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/reponsive.css">
+</head>
+<body>
+    
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-12">
+                    <h1 class="text-center">
+                        <span style="font-weight: bold; color: #0061c6;font-size: 50px;">LOGO</span>
+                        <br>
+                        <span style="color: #ff6f20">YOUR HERE</span>
+                    </h1>
+                </div>
+                <div class="col-md-9">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <!-- <div class="header-box-right">
+                                dsadas 1
+                            </div> -->
+                        </div>
+                        <div class="col-md-4">
+                            <div class="header-box-right">
+                                <img width="60" height="60" src="images/icon-clock-92x92.png" alt="">
+                                <h4>Giờ làm việc</h4>
+                                <p>Thứ 2 - Thứ 6: <span style="color:#ff6f20">08h đến 21h</span></p>
+                                <p>Thứ 2 - Thứ 6: <span style="color:#ff6f20">08h đến 21h</span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="header-box-right">
+                                <img width="60" height="60" src="images/icon-phone-92x92.png" alt="">
+                                <h4>Tổng đài đặt vé</h4>
+                                <p class="phone">0123456789</span></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav>
+            <div class="btn-nav-mobile">
+                <button id="click-show-nav"><i class="fa fa-bars" aria-hidden="true"></i></button>
+            </div>
+            <div class="container">
+                <div class="nav-main">
+                    <ul>
+                        <li>
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="#">Liên hệ</a>
+                        </li>
+                        <li>
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                        <li>
+                            <a href="#">Liên hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nav-mobile">
+                <ul>
+                    <li>
+                        <a href="#">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="#">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="#">Liên hệ</a>
+                    </li>
+                    <li>
+                        <a href="#">Trang chủ</a>
+                    </li>
+                    <li>
+                        <a href="#">Giới thiệu</a>
+                    </li>
+                    <li>
+                        <a href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="beadcrumb">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul>
+                            <li>
+                                <a href="#"><i class="fa fa-home" aria-hidden="true"></i>Trang chủ</a>
+                            </li>
+                            <li><i class="fa fa-angle-double-right" aria-hidden="true"></i></li>
+                            <li>
+                                <a href="#">Tìm vé xe</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="search-single">
+                        <form action="">
+                            <div class="form-datit">
+                                <input list="categories" class="search-ve-xe" type="text" placeholder="Nhập điểm đi...">
+                                
+                                <button>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn-replace"><i class="fa fa-refresh" aria-hidden="true"></i></button>
+                            </div>
+                            <div class="form-datit">
+                                <input list="categories" type="text" placeholder="Nhập điểm đến...">
+                                <button>
+                                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="btn-search">Tìm vé xe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h3 class="title">Có 3 chuyến từ Vũng Tàu đi Đà Lạt</h3>
+                    <div class="box-search shadow">
+                        <div class="image">
+                            <a href="#">
+                                <img src="https://static.vexere.com/c/i/18773/xe-minh-tri-limousine-VeXeRe-oTJxjjw-1000x600.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>
+                                <a href="#">Thịnh Phát Limo (Lạc Hồng)</a>
+                                <span class="rate">5 <i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span class="text-rate">- 100 đánh giá</span>
+                            </h2>
+                            <div class="price">
+                                <span>500.000đ</span>
+                            </div>
+                            <p>Lorem insum lorem insum</p>
+                            <div class="btn-action">
+                                <a href="#">Xem chi tiết</a>
+                                <a href="#">Đặt vé</a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="box-search shadow">
+                        <div class="image">
+                            <a href="#">
+                                <img src="https://static.vexere.com/c/i/18773/xe-minh-tri-limousine-VeXeRe-oTJxjjw-1000x600.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>
+                                <a href="#">Thịnh Phát Limo (Lạc Hồng)</a>
+                                <span class="rate">5 <i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span class="text-rate">- 100 đánh giá</span>
+                            </h2>
+                            <div class="price">
+                                <span>500.000đ</span>
+                            </div>
+                            <p>Lorem insum lorem insum</p>
+                            <div class="btn-action">
+                                <a href="#">Xem chi tiết</a>
+                                <a href="#">Đặt vé</a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="box-search shadow">
+                        <div class="image">
+                            <a href="#">
+                                <img src="https://static.vexere.com/c/i/18773/xe-minh-tri-limousine-VeXeRe-oTJxjjw-1000x600.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>
+                                <a href="#">Thịnh Phát Limo (Lạc Hồng)</a>
+                                <span class="rate">5 <i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span class="text-rate">- 100 đánh giá</span>
+                            </h2>
+                            <div class="price">
+                                <span>500.000đ</span>
+                            </div>
+                            <p>Lorem insum lorem insum</p>
+                            <div class="btn-action">
+                                <a href="#">Xem chi tiết</a>
+                                <a href="#">Đặt vé</a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="box-search shadow">
+                        <div class="image">
+                            <a href="#">
+                                <img src="https://static.vexere.com/c/i/18773/xe-minh-tri-limousine-VeXeRe-oTJxjjw-1000x600.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>
+                                <a href="#">Thịnh Phát Limo (Lạc Hồng)</a>
+                                <span class="rate">5 <i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span class="text-rate">- 100 đánh giá</span>
+                            </h2>
+                            <div class="price">
+                                <span>500.000đ</span>
+                            </div>
+                            <p>Lorem insum lorem insum</p>
+                            <div class="btn-action">
+                                <a href="#">Xem chi tiết</a>
+                                <a href="#">Đặt vé</a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                    <div class="box-search shadow">
+                        <div class="image">
+                            <a href="#">
+                                <img src="https://static.vexere.com/c/i/18773/xe-minh-tri-limousine-VeXeRe-oTJxjjw-1000x600.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="info">
+                            <h2>
+                                <a href="#">Thịnh Phát Limo (Lạc Hồng)</a>
+                                <span class="rate">5 <i class="fa fa-star" aria-hidden="true"></i></span>
+                                <span class="text-rate">- 100 đánh giá</span>
+                            </h2>
+                            <div class="price">
+                                <span>500.000đ</span>
+                            </div>
+                            <p>Lorem insum lorem insum</p>
+                            <div class="btn-action">
+                                <a href="#">Xem chi tiết</a>
+                                <a href="#">Đặt vé</a>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="sidebar">
+                        <div class="items">
+                            <h5>Tiêu chí phổ biến</h5>
+                            <div class="Filter__GroupItems-b104hz-3 kVXlqv">
+                                <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 checkbox--highlight Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe an toàn Covid-19 (2)</span>
+                                </label>
+                                <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe VIP Limousine (18)</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <h5>Giờ đi</h5>
+                            <div class="rangeSlider">
+                                <div class="rangeSlider__range"></div>
+                                <div class="rangeSlider__tooltips">
+                                <!-- <div class="rangeSlider__tooltip rangeSlider__tooltip--from"></div>
+                                <div class="rangeSlider__tooltip rangeSlider__tooltip--to"></div> -->
+                                </div>
+                                <button type="button" class="rangeSlider__handle rangeSlider__handle--from" data-handle-type="from"></a>
+                                <button type="button" class="rangeSlider__handle rangeSlider__handle--to" data-handle-type="to"></a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <h5>Giá vé</h5>
+                            <div class="rangeSlider">
+                                <div class="rangeSlider__range"></div>
+                                <div class="rangeSlider__tooltips">
+                                <!-- <div class="rangeSlider__tooltip rangeSlider__tooltip--from"></div>
+                                <div class="rangeSlider__tooltip rangeSlider__tooltip--to"></div> -->
+                                </div>
+                                <button type="button" class="rangeSlider__handle rangeSlider__handle--from" data-handle-type="from"></a>
+                                <button type="button" class="rangeSlider__handle rangeSlider__handle--to" data-handle-type="to"></a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <h5>Số chỗ trống</h5>
+                            <div class="rangeSlider">
+                                <div class="rangeSlider__range"></div>
+                                <div class="rangeSlider__tooltips">
+                                <!-- <div class="rangeSlider__tooltip rangeSlider__tooltip--from"></div>
+                                <div class="rangeSlider__tooltip rangeSlider__tooltip--to"></div> -->
+                                </div>
+                                <button type="button" class="rangeSlider__handle rangeSlider__handle--from" data-handle-type="from"></a>
+                                <button type="button" class="rangeSlider__handle rangeSlider__handle--to" data-handle-type="to"></a>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <h5>Số chỗ trống</h5>
+                            <div class="nha-xe">
+                                <input type="text" placeholder="Nhập tên nhà xe">
+                                <div class="box-scroll">
+                                    <div class="Filter__GroupItems-b104hz-3 kVXlqv">
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 checkbox--highlight Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe an toàn Covid-19 (2)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe VIP Limousine (18)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 checkbox--highlight Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe an toàn Covid-19 (2)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe VIP Limousine (18)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 checkbox--highlight Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe an toàn Covid-19 (2)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe VIP Limousine (18)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 checkbox--highlight Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe an toàn Covid-19 (2)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe VIP Limousine (18)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <h5>Số chỗ trống</h5>
+                            <div class="nha-xe">
+                                <input type="text" placeholder="Nhập tên nhà xe">
+                                <div class="box-scroll">
+                                    <div class="Filter__GroupItems-b104hz-3 kVXlqv">
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 checkbox--highlight Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe an toàn Covid-19 (2)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe VIP Limousine (18)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 checkbox--highlight Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe an toàn Covid-19 (2)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe VIP Limousine (18)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 checkbox--highlight Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe an toàn Covid-19 (2)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe VIP Limousine (18)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 checkbox--highlight Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe an toàn Covid-19 (2)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe VIP Limousine (18)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="items">
+                            <h5>Số chỗ trống</h5>
+                            <div class="nha-xe">
+                                <input type="text" placeholder="Nhập tên nhà xe">
+                                <div class="box-scroll">
+                                    <div class="Filter__GroupItems-b104hz-3 kVXlqv">
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 checkbox--highlight Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe an toàn Covid-19 (2)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe VIP Limousine (18)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 checkbox--highlight Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe an toàn Covid-19 (2)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe VIP Limousine (18)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 checkbox--highlight Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe an toàn Covid-19 (2)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe VIP Limousine (18)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 checkbox--highlight Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe an toàn Covid-19 (2)</span>
+                                        </label>
+                                        <label class="CheckBox__StyledCheckbox-sc-1be3z8j-0 Filter__CheckboxStyle-b104hz-8 jaZBTo ant-checkbox-wrapper"><span class="ant-checkbox"><input type="checkbox" class="ant-checkbox-input" value=""><span class="ant-checkbox-inner"></span></span><span>Xe VIP Limousine (18)</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="list-box">
+                        <h5>Các nhà xe chính</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Xe Anh Quốc</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Cô Tô Limousine</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Daily Limousine</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Dream Transport</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Anh Quốc</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Cô Tô Limousine</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Daily Limousine</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Dream Transport</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="list-box">
+                        <h5>Các chuyến xe chính</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Xe Anh Quốc</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Cô Tô Limousine</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Daily Limousine</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Dream Transport</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Anh Quốc</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Cô Tô Limousine</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Daily Limousine</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Dream Transport</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="list-box">
+                        <h5>Bến xe khách</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Xe Anh Quốc</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Cô Tô Limousine</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Daily Limousine</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Dream Transport</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Anh Quốc</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Cô Tô Limousine</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Daily Limousine</a>
+                            </li>
+                            <li>
+                                <a href="#">Xe Dream Transport</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <datalist id="categories">
+        <select multiple size=8>
+            <option value="Hà Nội">Hà Nội
+            <option value="TP.HCM">TP.HCM		
+            <option value="Đà Nẵng">Đà Nẵng
+        </select>
+    </datalist>
+    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="items-footer">
+                        <h3>
+                            Về chúng tôi
+                            <div></div>
+                        </h3>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        </p>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="items-footer">
+                        <h3>
+                            Hỗ trợ
+                            <div></div>
+                        </h3>
+                        <ul>
+                            <li>
+                                <a href="#">Hướng dẫn thanh toán</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế</a>
+                            </li>
+                            <li>
+                                <a href="#">Câu hỏi thường gặp</a>
+                            </li>
+                            <li>
+                                <a href="#">Hướng dẫn thanh toán</a>
+                            </li>
+                            <li>
+                                <a href="#">Quy chế</a>
+                            </li>
+                            <li>
+                                <a href="#">Câu hỏi thường gặp</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="items-footer">
+                        <h3>
+                            Giấy phép
+                            <div></div>
+                        </h3>
+                        <img style="width: 70%; margin-top: 20px;" src="https://xenangasia.com/wp-content/uploads/2019/11/huong-dan-dang-ky-website-voi-Bo-Cong-Thuong-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container text-center">
+                <p>Website design by <a href="#">VoPhucDat.Com</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="lib/slick/slick.min.js"></script>
+    <script>
+        var app = (function (app, $) {
+        "use strict";
+
+        var EVENT_START_COORDS,
+            START_POSITION,
+            HANDLE_POSITION = {
+            from: 1,
+            to: 100
+            },
+            MIN = 1,
+            MAX = 100,
+            INCREMENT = 1,
+            VALUES = [],
+            STEPS = [],
+            STEP_LENGTH,
+            $rangeSlider = $(".rangeSlider"),
+            $rangeSliderHandles = $rangeSlider.find(".rangeSlider__handle"),
+            $rangeSliderTooltips = $rangeSlider.find(".rangeSlider__tooltip"),
+            $rangeSliderRange = $rangeSlider.find(".rangeSlider__range");
+
+        function init() {
+            var i, len;
+
+            VALUES.push(MIN);
+            for (i = MIN + INCREMENT; i < MAX; i += INCREMENT) {
+            VALUES.push(i);
+            }
+            VALUES.push(MAX);
+
+            STEP_LENGTH = 100 / (VALUES.length - 1);
+
+            STEPS.push(0);
+            for (i = 0, len = VALUES.length; i < len; i++) {
+            STEPS.push(STEP_LENGTH / 2 + i * STEP_LENGTH);
+            }
+            STEPS.push(100);
+        }
+
+        function getValue(position) {
+            var i,
+            len,
+            index = -1;
+
+            for (i = 0, len = STEPS.length - 1; i < len; i++) {
+            if (position >= STEPS[i] && position < STEPS[i + 1]) {
+                index = i;
+                break;
+            }
+            }
+
+            return VALUES[index];
+        }
+
+        function getEventCoords(e) {
+            var isTouch = e.type.indexOf("touch") >= 0;
+            return {
+            x: isTouch ? e.originalEvent.touches[0].clientX : e.clientX,
+            y: isTouch ? e.originalEvent.touches[0].clientY : e.clientY
+            };
+        }
+
+        function pxToPerc(px) {
+            return (100 * px) / $rangeSlider.width();
+        }
+
+        function render() {
+            ["from", "to"].forEach(function (handleType) {
+            $rangeSliderHandles
+                .filter(".rangeSlider__handle--" + handleType)
+                .attr(
+                "style",
+                "left: calc(" +
+                    HANDLE_POSITION[handleType] +
+                    "% - " +
+                    $rangeSliderHandles.width() / 2 +
+                    "px);"
+                )
+                .attr("data-value", getValue(HANDLE_POSITION[handleType]));
+
+            $rangeSliderTooltips
+                .filter(".rangeSlider__tooltip--" + handleType)
+                .attr(
+                "style",
+                "left: calc(" +
+                    HANDLE_POSITION[handleType] +
+                    "% - " +
+                    $rangeSliderTooltips.width() / 2 +
+                    "px);"
+                );
+            });
+
+            $rangeSliderRange.css("left", HANDLE_POSITION["from"] + "%");
+            $rangeSliderRange.css(
+            "width",
+            HANDLE_POSITION["to"] - HANDLE_POSITION["from"] + "%"
+            );
+        }
+
+        function dragging(e) {
+            var $handle = e.data.$handle,
+            handleType = $handle.attr("data-handle-type"),
+            eventCoords = getEventCoords(e),
+            xDiff = eventCoords.x - EVENT_START_COORDS.x,
+            position = START_POSITION + pxToPerc(xDiff);
+
+            position = Math.max(position, 0);
+            position = Math.min(position, 100);
+            position = Math[handleType === "from" ? "min" : "max"](
+            position,
+            HANDLE_POSITION[handleType === "from" ? "to" : "from"]
+            );
+
+            HANDLE_POSITION[handleType] = position;
+
+            render();
+        }
+
+        function stopDragging(e) {
+            var $handle = e.data.$handle,
+            handleType = $handle.data("handle-type"),
+            value = getValue(HANDLE_POSITION[handleType]),
+            snapPosition = VALUES.indexOf(value) * STEP_LENGTH;
+
+            if (snapPosition !== HANDLE_POSITION[handleType]) {
+            $rangeSlider.addClass("rangeSlider--animate");
+            }
+
+            HANDLE_POSITION[handleType] = VALUES.indexOf(value) * STEP_LENGTH;
+            render();
+
+            $(document).off("mousemove touchmove", dragging);
+            $(document).off("mouseup touchend", stopDragging);
+        }
+
+        init();
+        render();
+        $rangeSliderHandles.on("mousedown touchstart", function (e) {
+            var $this = $(this);
+
+            START_POSITION = HANDLE_POSITION[$this.attr("data-handle-type")];
+            EVENT_START_COORDS = getEventCoords(e);
+
+            $rangeSlider.removeClass("rangeSlider--animate");
+
+            $rangeSliderHandles.removeClass("rangeSlider__handle--active");
+            $this.addClass("rangeSlider__handle--active");
+
+            $(document).on(
+            "mousemove touchmove",
+            {
+                $handle: $this
+            },
+            dragging
+            );
+            $(document).on(
+            "mouseup touchend",
+            {
+                $handle: $this
+            },
+            stopDragging
+            );
+        });
+
+        return app;
+        })(app || {}, jQuery);
+
+
+    </script>
+    
+</body>
+</html>
